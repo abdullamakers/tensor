@@ -3,7 +3,7 @@ import torch
 def E05(x):
     if x[0] < 0 or x[1] < 0:
         return "error"
-    x = torch.tensor([x[0], x[1]], device= "cpu") # if need to using a GPU write "cuda"
+    x = torch.tensor([x[0], x[1]], device= "cpu", dtype=torch.float32) # if need to using a GPU write "cuda"
     z = x ** 0.5
     return z
 

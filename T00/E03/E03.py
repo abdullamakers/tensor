@@ -1,8 +1,8 @@
 import torch
 
 def E03(x1,y1):
-    x = torch.tensor([x1[0],x1[1]], device = "cpu")
-    y = torch.tensor([y1[0],y1[1]], device = "cpu")
+    x = torch.tensor([x1[0],x1[1]], device = "cpu", dtype=torch.float32)
+    y = torch.tensor([y1[0],y1[1]], device = "cpu", dtype=torch.float32)
     z = x / y
     return z
 
